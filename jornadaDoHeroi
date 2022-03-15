@@ -1,0 +1,84 @@
+console.clear();
+const prompt = require('prompt-sync')();
+
+ console.log('Depois de um longo e cansativo dia de trabalho você lembra que ainda vai ter que fazer o jantar, mesmo muito cansado(a) você vai ter cozinhar, se não você não vai ter o que comer. Para saber se você teve um bom jantar responda as perguntas: ');
+
+ console.log();
+s = 0;
+n = 0;
+
+let p1 = prompt('Você lembrou de parar no mercado para comprar os ingredientes que faltam?[s/n]: ');
+
+if(p1.toLocaleLowerCase() == 's') {
+    s++
+}else{
+    n++
+}
+
+console.log();
+
+let p2 = prompt('Você limpou a louça suja de ontem?[s/n]: ');
+
+if(p2.toLocaleLowerCase() == 's') {
+    s++
+}else{
+    n++
+}
+
+console.log();
+
+let p3 = prompt('Você tem a receita do que vai cozinhar?[s/n]: ');
+
+if(p3.toLocaleLowerCase() == 's') {
+    s++
+}else{
+    n++
+}
+
+console.log();
+
+let p4 = prompt('Você tem todos os utensílios para fazer a receita?[s/n]: ');
+
+if(p4.toLocaleLowerCase() == 's') {
+    s++
+}else{
+    n++
+}
+
+console.log();
+
+let p5 = prompt('Você tem habilidade na cozinha para fazer essa receita?[s/n]: ');
+
+if(p5.toLocaleLowerCase() == 's') {
+    s++
+}else{
+    n++
+}
+
+console.log();
+
+if(s == 0){
+    console.log('Como você não tinha nada pra fazer nenhuma receita então teve que jantar pão com manteiga essa noite.')
+}
+
+if(s == 1){
+    console.log('Na hora que você foi cozinhar você acabou queimando a comida de uma forma que não dava nem para comer e acabou ficando sem jantar.')
+}
+
+if(s == 2){
+    console.log('Não foi o melhor jantar da sua vida já que você acabou queimando um pouco ela mas ainda dava pra comer.')
+}
+
+if(s == 3){
+    console.log('Você estava quase terminando o jantar mas acaba esquecendo de um ingrediente e erra a receita, mas ainda consegue comer a comida.')
+}
+
+if(s == 4){
+    console.log('Você consegue finalizar a receita mas quando vai experimentar o prato percebe que ficou sem sal e pimenta, mas conseguiu degustar um prato gostoso.')
+}
+
+if(s == 5){
+    console.log('Você consegue terminar a receita e quando vai experimentar seu prato você sente que foi para o céu e voltou, a comdida estava tão gostosa que você decidiu que esse prato vai virar receita de família.')
+}
+
+console.log();
